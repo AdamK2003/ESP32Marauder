@@ -69,17 +69,17 @@
 
   #if defined(MARAUDER_V6) || defined(MARAUDER_V6_1)
     //#define FLIPPER_ZERO_HAT
-    #define HAS_BATTERY
+    // #define HAS_BATTERY
     #define HAS_BT
     #define HAS_BT_REMOTE
-    #define HAS_BUTTONS
-    #define HAS_NEOPIXEL_LED
+    // #define HAS_BUTTONS
+    // #define HAS_NEOPIXEL_LED
     //#define HAS_PWR_MGMT
     #define HAS_SCREEN
     #define HAS_SD
     #define USE_SD
     #define HAS_TEMP_SENSOR
-    #define HAS_GPS
+    // #define HAS_GPS
   #endif
 
   #ifdef MARAUDER_KIT
@@ -651,7 +651,7 @@
     #endif
 
     #ifdef MARAUDER_V6
-      #define SD_CS 12
+      #define SD_CS 5
     #endif
 
     #ifdef MARAUDER_V6_1
