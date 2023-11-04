@@ -748,7 +748,7 @@
     #elif defined(MARAUDER_DEV_BOARD_PRO)
       #define PIN 16
     #else
-      #define PIN 25
+      #define PIN 4
     #endif
   
   #endif
