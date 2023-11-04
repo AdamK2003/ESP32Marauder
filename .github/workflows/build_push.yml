@@ -488,8 +488,8 @@ jobs:
       - name: "Upload v6 Artifact"
         uses: actions/upload-artifact@v3
         with:
-          name: esp32_marauder.v6.bin
-          path: ./esp32_marauder/build/esp32.esp32.d32/esp32_marauder.v6.bin
+          name: esp32_marauder.v6.mod.bin
+          path: ./esp32_marauder/build/esp32.esp32.d32/esp32_marauder.v6.mod.bin
           retention-days: 5
 
       - name: "Upload v6_1 Artifact"
@@ -601,8 +601,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./esp32_marauder/build/esp32.esp32.d32/esp32_marauder.v6.bin
-          asset_name: esp32_marauder.v6.bin
+          asset_path: ./esp32_marauder/build/esp32.esp32.d32/esp32_marauder.v6.mod.bin
+          asset_name: esp32_marauder.v6.mod.bin
           asset_content_type: application/bin
         if: github.event_name != 'pull_request'
 
