@@ -69,7 +69,7 @@
 
   #if defined(MARAUDER_V6) || defined(MARAUDER_V6_1)
     //#define FLIPPER_ZERO_HAT
-    // #define HAS_BATTERY
+    #define HAS_BATTERY
     #define HAS_BT
     #define HAS_BT_REMOTE
     // #define HAS_BUTTONS
@@ -655,7 +655,7 @@
     #endif
 
     #ifdef MARAUDER_V6_1
-      #define SD_CS 14
+      #define SD_CS 5
     #endif
 
     #ifdef MARAUDER_KIT
